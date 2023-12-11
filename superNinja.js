@@ -9,8 +9,9 @@ class Ninja {
     console.log(this.nombre);
   }
   showStats() {
-    console.log(`nombre: ${this.nombre} fuerza: ${this.fuerza} velocidad: ${this.velocidad} 
-        salud: ${this.salud}`);
+    console.log(
+      `Nombre: ${this.nombre} ,Salud:${this.salud}  ,Velocidad: ${this.velocidad} ,Fuerza: ${this.fuerza} `
+    );
   }
   drinkSake() {
     this.salud += 10;
@@ -26,6 +27,9 @@ class Sensei extends Ninja {
     this.sabiduria = 10;
   }
   speakWisdom() {
+    console.log(
+      "Lo que un programador puede hacer en un mes, dos programadores pueden hacerlo en dos meses"
+    );
     super.drinkSake();
   }
 }
